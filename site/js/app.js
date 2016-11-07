@@ -1,12 +1,6 @@
 (function(){
   'use strict';
 
-  var products = [{prodName : "Lechuga", prodQty: "1 bag"},
-{prodName : "Lechuga", prodQty: "1 bag"},
-{prodName : "Lechuga", prodQty: "1 bag"},
-{prodName : "Lechuga", prodQty: "1 bag"},
-{prodName : "Lechuga", prodQty: "1 bag"}];
-
   angular.module('ShoppingListCheckOff',[])
   .controller('ToBuyController',ToBuyController)
   .controller('AlreadyBoughtController',AlreadyBoughtController)
@@ -36,11 +30,11 @@
 
   function ShoppingListCheckOffService(){
     var service = this;
-    var toBuyItems = [{prodName : "Lechuga", prodQty: "1 bag"},
-        {prodName : "Lechuga", prodQty: "1 bag"},
-        {prodName : "Lechuga", prodQty: "1 bag"},
-        {prodName : "Lechuga", prodQty: "1 bag"},
-        {prodName : "Lechuga", prodQty: "1 bag"}];
+    var toBuyItems = [{prodName : "Lettuce", prodQty: "1 bag"},
+        {prodName : "Onions", prodQty: "4 Kgs"},
+        {prodName : "Carrots", prodQty: "3 Kgs"},
+        {prodName : "Apples", prodQty: "2 Kgs"},
+        {prodName : "Potatos", prodQty: "1 bag"}];
     var alreadyBoughtItems=[]//[{prodName : "Lechuga", prodQty: "2 bags"}];
     var hideNoMoreBuy = 0;
     service.addItem = function(itemIndex){
