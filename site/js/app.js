@@ -34,7 +34,7 @@
         {prodName : "Onions", prodQty: "4 Kgs"},
         {prodName : "Carrots", prodQty: "3 Kgs"},
         {prodName : "Apples", prodQty: "2 Kgs"},
-        {prodName : "Potatos", prodQty: "1 bag"}];
+        {prodName : "Potatoes", prodQty: "1 bag"}];
     var alreadyBoughtItems=[]//[{prodName : "Lechuga", prodQty: "2 bags"}];
     var hideNoMoreBuy = 0;
     service.addItem = function(itemIndex){
